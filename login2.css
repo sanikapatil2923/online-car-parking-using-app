@@ -1,0 +1,122 @@
+
+*{
+	paddding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url(ab.webp) no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
+	font-family: sans-serif;
+}
+.container{
+	position: relative;
+	margin-top: 90px;
+	width: 450px;
+	height: auto;
+	background: #dedede;
+	border-radius: 5px;
+}
+.label{
+	padding: 20px 130px;
+	font-size: 35px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #130f40;
+}
+.login_form{
+	padding: 20px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.login_form .font2{
+	margin-top: 60px;
+}
+.login_form button{
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #1A237E;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: #151c6a;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+.popup{
+	width: 400px;
+	background-color: #fff;
+	border-radius: 6px;
+	position: absolute;
+	 top: 0;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0); 
+	transition: transform .4s , top .4s;
+	visibility: hidden;
+	text-align: center;
+	padding: 0  30px 30px;
+	height: 330px;
+	color: #000;
+}
+.popup ion-icon{
+	color: #00ff00;
+	font-size: 50px;
+}
+.popup button {
+	width: 100%;
+	background: #00ff00;
+	padding: 10px 0;
+	margin-top: 50px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow:0 0 0 2px rgba(0, 0, 0, .1);
+}
+.popup a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.open-slide{
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1.0);
+	visibility: visible;
+}
